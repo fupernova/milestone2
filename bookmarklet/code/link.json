@@ -1,0 +1,9 @@
+{
+    "name": "hex",
+    "description": "Application",
+    "path": "hexRangerApp.exe",
+    "type": "stdio",
+    "allowed_origins": [
+    "chrome-extension://<character string seen in extensions page>/"
+    ]
+}

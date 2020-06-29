@@ -1,0 +1,22 @@
+{
+    "name": "hexRangerExtension",
+    "version":"1.0",
+    "manifest_version": 2,
+    "content_scripts":  [
+        {
+            "matches": ["https://*/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "background": { 
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "nativeMessaging",
+        "tabs"
+    ],
+    "browser_action": {
+        "default_icon": "hex.png",
+        "default_popup": "popup.html"
+    }
+}
